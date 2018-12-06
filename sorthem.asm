@@ -41,55 +41,63 @@ printNextLine:
 	cmp [ecx], dword 1
 	jne check2
 	mov eax, line1
+	call print_string
 	jmp nextLine
 
 check2:
 	cmp [ecx], dword 2
 	jne check3
 	mov eax, line2
+	call print_string
 	jmp nextLine
 
 check3:
 	cmp [ecx], dword 3
 	jne check4
 	mov eax, line3
+	call print_string
 	jmp nextLine
 
 check4:
 	cmp [ecx], dword 4
 	jne check5
 	mov eax, line4
+	call print_string
 	jmp nextLine
 
 check5:
 	cmp [ecx], dword 5
 	jne check6
 	mov eax, line5
+	call print_string
 	jmp nextLine
 
 check6:
 	cmp [ecx], dword 6
 	jne check7
 	mov eax, line6
+	call print_string
 	jmp nextLine
 
 check7:
 	cmp [ecx], dword 7
 	jne check8
 	mov eax, line7
+	call print_string
 	jmp nextLine
 
 check8:
 	cmp [ecx], dword 8
 	jne check9
 	mov eax, line8
+	call print_string
 	jmp nextLine
 
 check9:
 	mov eax, line9
+	call print_string
 
 nextLine:
-	call print_string
 	dec edx
 	sub ecx, 4
 	cmp edx, 0
