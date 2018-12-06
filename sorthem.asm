@@ -17,7 +17,7 @@ line8:	db "   oooooooo|oooooooo   ",10,0
 line9:	db "  ooooooooo|ooooooooo  ",10,0
 line10:	db "XXXXXXXXXXXXXXXXXXXXXXX",10,0
 maxPegs: dd 0
-pegArray: times 10 dd 0
+pegArray: times 9 dd 0
 
 section .bss
 
